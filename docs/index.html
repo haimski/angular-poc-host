@@ -10,7 +10,31 @@
 
 <body>
     <h1>Works!</h1>
-    <app-root></app-root>
+    <app-root _nghost-ham-c0="" ng-version="7.2.14">
+        <router-outlet _ngcontent-ham-c0=""></router-outlet>
+        <app-weather _nghost-ham-c1="">
+            <div _ngcontent-ham-c1="" class="container">
+                <div _ngcontent-ham-c1="" class="row">
+                    <div _ngcontent-ham-c1="" class="col-md-6">
+                        <h3 _ngcontent-ham-c1="" class="text-center my-4">Search for Weather:</h3>
+                        <form _ngcontent-ham-c1="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                            <div _ngcontent-ham-c1="" class="form-group"><input _ngcontent-ham-c1="" aria-describedby="weatherLocation" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="location" id="weatherLocation" placeholder="Please input a Location" type="text"></div>
+                            <div _ngcontent-ham-c1="" class="text-center"><button _ngcontent-ham-c1="" class="btn btn-success btn-md" type="submit">Search for the weather</button></div>
+                        </form>
+                    </div>
+                    <div _ngcontent-ham-c1="" class="col-md-6 my-4">
+                        <h3 _ngcontent-ham-c1="" class="text-center">Weather Details:</h3>
+                        <p _ngcontent-ham-c1="" class="text-center"> Current weather conditions: </p>
+                        <p _ngcontent-ham-c1="" class="text-center"> Temperature in Degrees Celsius: </p>
+                        <p _ngcontent-ham-c1="" class="text-center"> Temperature in Degrees Farenheit: </p>
+                        <p _ngcontent-ham-c1="" class="text-center"> Feels like in Degrees Celsius: </p>
+                        <p _ngcontent-ham-c1="" class="text-center"> Feels like in Degrees Farenheit: </p>
+                        <p _ngcontent-ham-c1="" class="text-center"> Location Searched: , </p>
+                    </div>
+                </div>
+            </div>
+        </app-weather>
+    </app-root>
 
 
     <script src="https://codeforheart.github.io/angular-poc/runtime.26209474bfa8dc87a77c.js"></script>
