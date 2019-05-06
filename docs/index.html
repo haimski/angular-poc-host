@@ -59,7 +59,7 @@
 
             const formResults = this.getElementsByTagName('p');
             for (result in formResults) {
-                dataDisplay.innerHTML += formResults[result];
+                dataDisplay.innerHTML += formResults[result].innerText + "<br />";
             };
         }
     </script>
