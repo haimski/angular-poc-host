@@ -58,7 +58,9 @@
             const formResults = this.getElementsByTagName('p');
             dataDisplay.innerHTML = "";
             for (result in formResults) {
-                dataDisplay.innerHTML += formResults[result].innerText + "<br />";
+                if (formResults[result].innerText) {
+                    dataDisplay.innerHTML += formResults[result].innerText + "<br />";
+                }
             };
         }
     </script>
