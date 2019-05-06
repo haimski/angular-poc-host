@@ -58,8 +58,8 @@
             console.log(this.getElementsByTagName('p'));
 
             const formResults = this.getElementsByTagName('p');
-            array.forEach(element => {
-                dataDisplay.innerHTML += formResults[element].childNodes.text.data + '<br />';
+            formResults.forEach(element => {
+                dataDisplay.innerHTML += element.childNodes.text.data + '<br />';
             });
         }
     </script>
