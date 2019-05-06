@@ -57,11 +57,13 @@
         appRoot.onsubmit = function() {
             const formResults = this.getElementsByTagName('p');
             dataDisplay.innerHTML = "";
-            for (result in formResults) {
-                if (formResults[result].innerText) {
-                    dataDisplay.innerHTML += formResults[result].innerText + "<br />";
-                }
-            };
+            setTimeout(function() {
+                for (result in formResults) {
+                    if (formResults[result].innerText) {
+                        dataDisplay.innerHTML += formResults[result].innerText + "<br />";
+                    }
+                };
+            }, 1000);
         }
     </script>
 </body>
