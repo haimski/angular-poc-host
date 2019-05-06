@@ -58,9 +58,9 @@
             console.log(this.getElementsByTagName('p'));
 
             const formResults = this.getElementsByTagName('p');
-            formResults.forEach(element => {
-                dataDisplay.innerHTML += element.childNodes.text.data + '<br />';
-            });
+            for (result in formResults) {
+                dataDisplay.innerHTML += formResults[result];
+            };
         }
     </script>
 </body>
