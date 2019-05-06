@@ -55,9 +55,8 @@
         const appRoot = document.querySelector('app-root');
         const dataDisplay = document.getElementById('showData');
         appRoot.onsubmit = function() {
-            console.log(this.getElementsByTagName('p'));
-
             const formResults = this.getElementsByTagName('p');
+            dataDisplay.innerHTML = "";
             for (result in formResults) {
                 dataDisplay.innerHTML += formResults[result].innerText + "<br />";
             };
